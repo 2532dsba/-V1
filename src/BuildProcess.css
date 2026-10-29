@@ -1,0 +1,62 @@
+/* “建站流程”：所有选择器均以 zl-build- 开头，避免影响走陵旧页面。 */
+.zl-build-process {
+  background: #fbfbfb;
+  color: #202020;
+  width: 100%;
+  padding: 39px 24px 36px;
+  scroll-margin-top: 88px;
+}
+.zl-build-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.zl-build-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.zl-build-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zl-build-item h3 {
+  margin: 0;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif;
+  font-size: 23px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #171717;
+}
+.zl-build-item p {
+  margin: 2px 0 0;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #656565;
+}
+.zl-build-arrow {
+  display: block;
+  flex-shrink: 0;
+  color: #909090;
+  margin: 31px auto 47px;
+}
+@media (max-width: 640px) {
+  .zl-build-process { padding: 38px 16px 44px; scroll-margin-top: 76px; }
+  .zl-build-item h3 { font-size: clamp(19px, 5.1vw, 23px); line-height: 1.55; }
+  .zl-build-item p { font-size: clamp(15px, 4.15vw, 20px); line-height: 1.8; }
+  .zl-build-arrow { margin: 27px auto 34px; }
+}

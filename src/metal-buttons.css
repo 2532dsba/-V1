@@ -1,0 +1,307 @@
+/* Adapted from the supplied MetalButton component for this Vite/CSS project. */
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+) {
+  --metal-top: #edf47d;
+  --metal-mid: #c4d52a;
+  --metal-bottom: #8c991a;
+  --metal-edge: #66700f;
+  --metal-highlight: rgba(255, 255, 255, .62);
+  --metal-text: #11160d;
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 10px 20px;
+  overflow: hidden;
+  border: 1px solid var(--metal-edge) !important;
+  border-bottom-width: 2px !important;
+  border-radius: 999px !important;
+  color: var(--metal-text) !important;
+  background: linear-gradient(180deg, var(--metal-top), var(--metal-mid) 52%, var(--metal-bottom)) !important;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, .18),
+    0 0 14px color-mix(in srgb, var(--metal-mid) 22%, transparent),
+    inset 1px 1px 1px var(--metal-highlight),
+    inset -1px -2px 2px rgba(0, 0, 0, .22) !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .24);
+  text-decoration: none !important;
+  cursor: pointer;
+  transform: translateY(0) scale(1);
+  transform-origin: center;
+  transition: transform 250ms cubic-bezier(.1,.4,.2,1), filter 200ms ease, box-shadow 250ms ease !important;
+}
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+)::before {
+  position: absolute;
+  z-index: -1;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255,255,255,.18), transparent 46%, rgba(0,0,0,.08));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.18), inset 0 5px 10px rgba(255,255,255,.08);
+  pointer-events: none;
+  content: '';
+}
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+)::after {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.32) 46%, transparent 70%);
+  pointer-events: none;
+  content: '';
+  transform: translateX(-80%);
+  transition: opacity .25s ease, transform .45s ease;
+}
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+):hover {
+  filter: brightness(1.09);
+  transform: translateY(-1px) scale(1.025);
+  box-shadow:
+    0 7px 15px rgba(0, 0, 0, .22),
+    0 0 18px color-mix(in srgb, var(--metal-mid) 30%, transparent),
+    inset 1px 1px 1px var(--metal-highlight),
+    inset -1px -2px 2px rgba(0, 0, 0, .22) !important;
+}
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+):hover::after { opacity: 1; transform: translateX(80%); }
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+):active { filter: brightness(.91); transform: translateY(2px) scale(.985); box-shadow: 0 1px 3px rgba(0,0,0,.18), inset 1px 2px 3px rgba(0,0,0,.2) !important; }
+
+:where(
+  .nav-cta,
+  .primary-button,
+  .hero-actions .text-button,
+  .route-grid article > a,
+  .experience-copy > a,
+  .journey-end > a,
+  .notes-content > a,
+  .back-home,
+  .archive-page-footer > a,
+  .zhaoling-back,
+  .zhaoling-hero-actions > a,
+  .model-controls > button,
+  .quick-questions > button,
+  .guide-chat form button,
+  .zhaoling-footer > a,
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+):focus-visible { outline: 3px solid color-mix(in srgb, var(--metal-mid) 48%, white); outline-offset: 3px; }
+
+/* Gold variant for Tang and Changle surfaces. */
+:where(
+  .tang-back,
+  .tang-hero-copy > div > a,
+  .tang-footer a,
+  .tang-modal-close,
+  .back-to-zouling,
+  .apex-pill,
+  .changle-hero-actions > a,
+  .method-section > a,
+  .changle-footer > a,
+  .changle-back-home,
+  .identity-primary,
+  .identity-secondary,
+  .context-link
+) {
+  --metal-top: #ffe7aa;
+  --metal-mid: #d8b77a;
+  --metal-bottom: #927044;
+  --metal-edge: #76532b;
+  --metal-text: #25170c;
+}
+
+/* Compact treatments retain the supplied metal behavior without changing layouts. */
+:where(.context-link,.quick-questions > button,.route-grid article > a,.experience-copy > a,.journey-end > a,.notes-content > a,.tang-footer a,.zhaoling-footer > a,.changle-footer > a,.back-to-zouling,.back-home,.changle-back-home,.tang-back,.zhaoling-back) { min-height: 36px; padding: 8px 14px; font-size: 12px; }
+.guide-chat form button { width: 48px; min-width: 48px; height: 42px; min-height: 42px; padding: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  :where(a,button)::after { transition: none; }
+}
